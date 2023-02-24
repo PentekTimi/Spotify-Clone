@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+// import own css styles
+import "./index.css";
+// import the 5 main sections that make up the webpage
+import NavigationSection from './components/NavigationSection';
+import Header from './components/Header';
+import WhyPremium from './components/WhyPremium';
+import PickPremium from './components/PickPremium';
+import Footer from './components/Footer';
 
 function App() {
+  // the App component returns the navigation menu, header, why premium, pick premium and footer components
+  // the Header component passes on a price property
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavigationSection />
+      <Header price={6.99}/>
+      <WhyPremium />
+      <PickPremium />
+      <Footer />
     </div>
   );
 }

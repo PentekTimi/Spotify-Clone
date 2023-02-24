@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Nunito', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -9,5 +11,411 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+/* General styles end */
+
+/* Navigation Section styles */
+.navigation {
+  background-color: black;
+  padding: 1rem 0;
+}
+
+.navigation-section {
+  padding: 0 15px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.navigation-links {
+  margin: 0rem 1rem;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navigation-links:hover {
+  color: #1ED760;
+}
+/* Navigation Section styles end */
+
+/* Header Section styles */
+.header {
+  background-color: #1e75df;
+}
+
+.header-section {
+  padding: 65px 1rem 35px;
+  color: white;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.header-title {
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.header-subtitle {
+  margin: 21px 0px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.header-btns {
+  margin: 28px 0px 0px;
+}
+
+.start-btn, .plans-btn { 
+  padding: .8rem 1.75rem;
+  border-radius: 99px;
+  border: none;
+  margin-right: .75rem;
+  font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.start-btn {
+  background-color: black;
+}
+
+.start-btn a {
+  color: white;
+}
+
+.plans-btn {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.plans-btn a {
+  color: white;
+}
+
+.header-legalText {
+  margin-top: 40px;
+  font-size: 0.6rem;
+}
+
+.header-legalTextLink {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+
+.start-btn:hover, .plans-btn:hover, .pickPremium-btn:hover {
+  transform: scale(1.05);
+}
+/* Header Section styles end */
+
+/* Why Premium Section styles */
+.whyPremium-section {
+  margin: 0 auto;
+  padding: 75px 15px 85px;
+}
+
+.whyPremium-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 72px;
+}
+
+.whyPremium-card {
+  width: 270px;
+  text-align: center;
+}
+
+.whyPremium-card-img {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto 36px;
+}
+
+.whyPremium-card-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.whyPremium-card-text {
+  text-align: center;
+  font-size: 14px;
+}
+/* Why Premium Section styles end */
+
+
+/* Pick Premium Section styles */
+.pickPremium {
+  background-color: #efefef;
+}
+
+.pickPremium-section {
+  margin: 0 auto;
+  padding: 65px 15px;
+}
+
+.pickPremium-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.pickPremium-subtitle {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  margin: 2px 0 10px;
+}
+
+.premiumOptions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin: 50px 0 25px;
+}
+
+.pickPremium-card {
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 16px;
+  padding: 16px;
+  box-shadow: rgb(255 255 255) 0px 0px 0px 0px, rgb(0 0 0 / 30%) 0px 0px 8px;
+}
+
+.promotionItem {
+  background-color: #0d72ea;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 800;
+  margin: 0 4px 10px 0;
+  padding: 4px 8px;
+  width: fit-content;
+}
+
+.cardTitle {
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.priceInfo {
+  margin-bottom: 2px;
+  font-size: 15px;
+}
+
+.accountInfo {
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+.pickPremium-btn {
+  color: white;
+  text-align: center;
+  background-color: #191414;
+  border-radius: 99px;
+  padding: 12px 32px;
+  width: 100%;
+  font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.pickPremium-legal {
+  margin-top: 12px;
+}
+
+.legalText {
+  font-size: 11px;
+  color: #535353;
+}
+
+.termsLink {
+  color: #535353;
+  text-decoration: underline;
+}
+/* Pick Premium Section styles end */
+
+/* Footer Section styles */
+.footer {
+  background-color: #000;
+  padding: 80px 0 50px;
+}
+
+.footer-section {
+  margin: 0 auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer .logo-container {
+  width: 14%;
+  min-height: 346px;
+}
+
+.footer-navigation {
+  width: 50%;
+  align-items: flex-start;
+}
+
+.footerNav-listGroup {
+  padding: 0 40px;
+}
+
+.footerNav-listGroup-title {
+  color: #919496;
+  font-weight: 800;
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.footerNav-listItem {
+  padding: 3px 0 15px;
+}
+
+.footerNav-listLink {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footerNav-listLink:hover {
+  color: #1ED760;
+}
+
+.socialIcons {
+  margin: 0 15px 0 auto;
+}
+
+.socialIcons-listGroup {
+  margin: 20px 0 0;
+}
+
+.socialIcons-listItem {
+  margin-right: 15px;
+  background-color: #222326;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.socialIcons-listLink {
+  font-size: 24px;
+  color: white;
+}
+
+.socialIcons-listLink:hover {
+  color: #1ed760;
+}
+
+.footer-location  {
+  width: 100%;
+  justify-content: flex-end;
+  color: #919496;
+  margin: 0 15px;
+  font-size: 11px;
+}
+
+.footerLocation-text {
+  margin-left: .75em;
+  cursor: pointer;
+  color: #919496;
+}
+
+.footerLocation-text:hover {
+  color: #1ED760;
+}
+
+.footer-legalLinks {
+  width: 100%;
+  color: #919496;
+}
+
+.legalLinks-listItem {
+  margin-right: 20px;
+  padding: 1em 0;
+}
+
+.legalLinks-link {
+  color: #919496;
+  font-size: 11px;
+}
+
+.legalLinks-link:hover {
+  color: #1ED760;
+}
+
+.copyright {
+  margin: 0 15px 0 auto;
+  font-size: 11px;
+  padding: 1em 0;
+}
+
+.recreatedWeb-linkWrapper {
+  text-align: center;
+}
+
+.recreatedWeb-link {
+  color: white;
+}
+
+.recreatedWeb-link:hover {
+  color: #1ED760;
+}
+/* Footer Section styles end */
+
+/* Media styles */
+@media (min-width: 1200px) {
+  .navigation-section {
+    max-width: 1070px;
+  }
+
+  .header-section {
+    width: 1070px;
+  }
+
+  .whyPremium-section {
+    width: 1070px;
+  }
+
+  .pickPremium-section {
+    width: 1070px;
+  }
+
+  .footer-section {
+    width: 1070px;
+  }
 }
